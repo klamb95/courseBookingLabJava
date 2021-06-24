@@ -42,6 +42,9 @@ public class DataLoader implements ApplicationRunner {
         Customer kieran = new Customer("Kieran", "Livingston", 25);
         customerRepository.save(kieran);
 
+        Customer aidan = new Customer("Aidan", "Livingston", 21);
+        customerRepository.save(aidan);
+
         Customer giuliano = new Customer("Giuliano", "Glasgow", 28);
         customerRepository.save(giuliano);
 
@@ -59,5 +62,8 @@ public class DataLoader implements ApplicationRunner {
 
         Booking booking4 = new Booking("12/07/1995", course2, kieran);
         bookingRepository.save(booking4);
+
+        Booking booking5 = new Booking("13/06/2020", course2, aidan);
+        bookingRepository.save(booking5);
     }
 }
